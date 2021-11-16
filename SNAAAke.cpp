@@ -131,10 +131,10 @@ int main()
 		       break;
 	   } }
 
-	   if (map[snake[0][0]][snake[1][0]] == '#'|| map[a][b] =='O' ) {
+	   if (map[snake[0][0]][snake[1][0]] == '#'|| map[snake[0][0]][snake[1][0]] =='O' ) {
 		   hit = true; }
 	   else {
-		   if (map[a][b] == 'o') {
+		   if (map[snake[0][0]][snake[1][0]] == 'o') {
 			   snakesize = snakesize + 1;
 			   snake[0][snakesize] =snake[0][snakesize-2]+(snake[0][snakesize - 2]- snake[0][snakesize - 1]) ;
 			   snake[1][snakesize] =snake[1][snakesize - 2] + (snake[1][snakesize - 2] - snake[1][snakesize - 1]);
